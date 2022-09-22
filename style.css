@@ -2,7 +2,7 @@
 .flex-container {
     display: flex;
     flex-direction: row;
-    background: rgb(246, 212, 177);
+    background: rgb(240, 230, 211);
     height: auto;
 }
 .flex-item {
