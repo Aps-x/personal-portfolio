@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="background" style="background-image: url(../images/XBOWBack.jpg);">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>X-BOW by Aps</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../images/CardCoverXBOW.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+     <!-- Banner -->
+    <img src="../images/XBOWBanner.png" class="banner">
+     <!-- Flex container -->
+    <div class="article-flex-container">
+         <!-- Article -->
+        <article class="flex-item">
+            <h1>Description</h1>
+            <p class="article-text">
+                X-BOW is a local multiplayer PvP game, taking inspiration from <em>Towerfall Ascension</em> and 
+                <em>Nuclear Throne</em>. It is my fifth Unity project and first original game. It took roughly 35+ 
+                days to complete.
+            </p>
+            <p class="article-text">
+                Below is an in depth explanation of the design process of X-BOW. If you just want to view
+                the code you can do so <a href="blahblah" target="_blank">here.</a>
+            </p>
+            <h1>Early Development</h1>
+            <p class="article-text">
+                X-BOW started as a GameMaker Studio project that I made for my highschool game design class 
+                in 2015 (pictured below). I had been playing a game called <em>Monaco: What's Yours Is Mine</em> at 
+                the time and found using the crossbow very fun, so I created a little game centered around 
+                the mechanic of firing a crossbow. I wasn't capable of programming challenging AI, but in 
+                the computer lab it was easy to play with the person next to me, so it became a local 
+                multiplayer PvP game.
+            </p>
+            <img src="../images/XBOWAlpha.png" class="image">
+            <p>X-BOW prototype (2015)</p>
+            <p class="article-text">
+                After I started teaching myself real programming in 2022 by recreating Asteroids, Space 
+                Invaders, Snake, and Joust, I decided to revisit X-BOW and create a proper game. 
+                The first thing I wanted to change was the game's perspective - I didn't like the 
+                top down look of the game; I much preferred the top down oblique perspective of games 
+                like <em>Nuclear Throne</em> and <em>Enter the Gungeon</em>. Secondly, I wanted to add 
+                more depth to the combat of the game.
+            </p>
+            <h1>Game Design</h1>
+            <p class="article-text">
+                I began redesigning the combat of the game by brainstorming possible mechanics 
+                (i.e. dodge rolling, shooting arrows out of midair, arrow catching, arrow reflecting, 
+                melee combat, slashing arrows out of midair, "speed shotting" arrows). I had four 
+                pillars of design that I followed to decide which mechanics to add to the game: 
+            </p>
+            <p class="article-text">1. The crossbow is the core mechanic of the game, therefore it should not have too many ways to counter it</p>
+            <p class="article-text">2. I wanted to add mechanics that promoted aggression and active playstyles rather than overly defensive or passive ones</p>
+            <p class="article-text">3. Mechanics should have multiple uses to create interesting decisions</p>
+            <p class="article-text">4. I wanted the additional abilities to have downsides or punish windows</p>
+            <p class="article-text">
+                Following these four design pillars, I decided on adding a dodge roll and a melee. 
+                The dodge roll has invincibility frames for the first half of the dodge, making it an 
+                excellent defensive move if timed well. The dodge can also be used to advance / 
+                reposition quickly and aggressively. If used incorrectly, however, it will lock you 
+                into a predictable movement and make you an easy target.
+            </p>
+            <p class="article-text">
+                The melee can be used defensively to deflect an arrow away from you to save yourself, or 
+                offensively to reflect an arrow back at an enemy. After using your melee, it takes 1 
+                second for your dino to recover, providing an ample punish window for your opponents to 
+                take advantage of. It also dovetails well with the dodge roll as it can help you close 
+                the distance for an aggressive melee kill. Not only can the melee be used for melee kills
+                and reflects, but it can also be used for "speed shotting" your own arrows, wherein you 
+                fire an arrow and immediately melee speed boost it. You gain a faster arrow, but can't 
+                move for the next 1 second, so it is a risky decision.
+            </p>
+            <p class="article-text">
+                These mechanics combine to create a fast-paced game full of interesting decisions and 
+                mind games.
+            </p>
+            <h1>Map Design</h1>
+            <p class="article-text">
+                The map order in the level select is in chronological order of when they were developed, 
+                so you can easily/visually see the progression of X-BOW's map design for yourself. 
+                It started with maps that only had walls in a simple pattern before progressing into 
+                experimentation with interesting map gimmicks. Some things that I learned over the 
+                course of the game:
+            </p>
+            <p class="article-text">
+                1. Placing walls/cover was my primary method of designing the level, so it was easy to 
+                fall into the trap of adding too much. I had the urge to fill in the map with cover 
+                because that was the part I was actually creating, but empty space is just as important 
+                to the gameplay as cover. Some cut early maps were too constrictive and slowed the game 
+                down because I saw empty space as something to fill in. I had already hypothesized before
+                I started designing levels that too much cover would restrict players and make the game
+                less fun, but it still took me a couple of maps to correct my impulse.
+            </p>
+            <p class="article-text">
+                2. I wanted the player's gameplay mechanics to be relatively simple, so for the game to 
+                hold the player's interest, it was up to the levels to put interesting spins on the 
+                gameplay loop. Bushes concealed players, dark levels concealed arrows. Portals are 
+                great for opening up maps and creating chaos. Arrow traps synergised well with the 
+                reflect mechanic. Targets made the levels more dynamic, as did moving platforms. 
+                Finally, slippery ice was just fun.
+            </p>
+            <h1>Credits</h1>
+            <p class="article-text">Dino Characters - arks.itch.io / @ScissorMarks</p>
+            <p class="article-text">Main Environment Art - cainos.itch.io / @cainos_Chen</p>
+            <p class="article-text">Lobby Dungeon Art - opengameart.org/user/buch</p>
+            <p class="article-text">Dark Dungeon Art - raou.itch.io / @raoucemar</p>
+            <p class="article-text">Water Sprites - ninjikin.itch.io / @CrystalScience</p>
+            <p class="article-text">Spikes & Traps - stealthix.itch.io / patreon.com/Stealthix</p>
+            <p class="article-text">VFX & Music - pixel-boy.itch.io / patreon.com/pixelarchipel</p>
+            <p class="article-text">Level Music - ryanavx.itch.io / @ryanandbreezy</p>
+            <p class="article-text">Sword Slash Effect - nyknck.itch.io / @nyk_nck</p>
+            <p class="article-text">Animated Portals - elthen.itch.io / @pixelthen</p>
+            <p class="article-text">Menu Art - danielriise.artstation.com / @NostalgiaTree</p>
+            <p class="article-text">Arrow Sprites - Towerfall Ascension</p>
+            <p class="article-text">Sprites/Sounds Various - Nuclear Throne</p>
+            <br>
+            <button>Download X-BOW[47].zip</button>
+            <!-- Footer -->
+            <div style="height: 35px;width: 100%;"></div>
+        </article>  
+        <p class="article-text"></p>
+         <!-- Sidebar Images -->
+        <div class="flex-item-sidebar">
+            <img src="../images/XBOWCover.png" style="height:300px;width:300px;">
+            <img src="../images/XBOWSide1.png" style="height:300px;width:300px;">
+            <img src="../images/XBOWSide2.png" style="height:300px;width:300px;">
+            <img src="../images/XBOWSide3.png" style="height:300px;width:300px;">
+            <img src="../images/XBOWSide4.png" style="height:300px;width:300px;">
+            <img src="../images/XBOWSide5.png" style="height:300px;width:300px;">
+            <img src="../images/XBOWSide6.png" style="height:300px;width:300px;">
+        </div>
+    </div>
+</body>
+</html>
