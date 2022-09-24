@@ -10,6 +10,7 @@
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
+      <button id="unity-load-button">start loading</button>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -89,18 +90,23 @@
 
       var script = document.createElement("script");
       script.src = loaderUrl;
-      script.onload = () => {
+      loadButton.addEventListener("click", function() {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
           loadingBar.style.display = "none";
+          loadButton.style.display = "none";
+          loadButton.disabled = true;
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
           };
         }).catch((message) => {
           alert(message);
         });
-      };
+      });
+      loadButton.addEventListener("click", function() {
+          loadButton.disabled = true;
+      });
       document.body.appendChild(script);
     </script>
   </body>
