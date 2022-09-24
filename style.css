@@ -66,6 +66,14 @@ article {
 .article-text {
     font-size: larger;
 }
+.player {
+    display: block;
+    margin: auto;
+    width: 960px;
+    height: 642px;
+    background-color: white;
+    border:none;
+}
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
