@@ -92,11 +92,12 @@
       script.src = loaderUrl;
       loadButton.addEventListener("click", function() {
         loadingBar.style.display = "block";
+        loadButton.style.display = "none";
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
           loadingBar.style.display = "none";
-          loadButton.style.display = "none";
+          
           loadButton.disabled = true;
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
