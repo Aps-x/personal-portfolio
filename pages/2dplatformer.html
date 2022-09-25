@@ -19,6 +19,7 @@
     <div class="article-flex-container">
          <!-- Article -->
         <article class="flex-item">
+            <p class="notice">NOTICE: Unity HTML5 WebGL builds run poorly on Firefox; additionally, entering and then exiting fullscreen can cause visual glitches on Firefox. Chrome is recommended.</p>
             <h1>Description</h1>
             <p class="article-text">
                 2DPlatformer is a short demonstration of various platformer movement mechanics. This game
@@ -26,7 +27,22 @@
                 as a break from X-BOW, and partly to test out the state pattern and my ability to 
                 reproduce platformer mechanics.
             </p>
-            <a href="../images/ApsPC.png" download="apspc" class="button">Download X-BOW[47].zip</a>
+            <p class="article-text">
+                The state pattern is a solution to the issue of increasing complexity surrounding an 
+                objects state. A state is the current condition of an object and decides the behavior 
+                of the object. When an object has numerous states each with different conditions it can 
+                quickly turn into a spaghetti of if/else logic. The state pattern suggests that each 
+                state should be moved into its own class. The benefits of this approach include: firstly, 
+                when the state code is separated it is clearer to read and understand; and secondly, each 
+                state's code is self-contained and changes made to one state won't affect another.
+            </p>
+            <p class="article-text">
+                You can view the code <a href="blahblah" target="_blank">here.</a>
+            </p>
+            <p class="article-text">
+                Or you can download the windows executable below.
+            </p>
+            <a href="../images/ApsPC.png" download="apspc" class="button">Download 2DPlatformer.zip</a>
             <!-- Footer -->
             <div style="height: 35px;width: 100%;"></div>
         </article>  

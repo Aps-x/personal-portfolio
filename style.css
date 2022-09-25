@@ -87,6 +87,9 @@ article {
     cursor: pointer;
     border-radius: 8px;
   }
+.notice {
+    display: block;
+}
 
 
 @media (max-width: 1500px) {
@@ -121,6 +124,9 @@ article {
         max-height: 0%;
     }
     .player {
+        display: none;
+    }
+    .notice {
         display: none;
     }
   }
